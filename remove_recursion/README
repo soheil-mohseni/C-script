@@ -1,0 +1,36 @@
+# Non-Recursive Preorder Traversal Implementation in C
+
+This project presents a complete and executable implementation of the preorder traversal of a binary tree using a stack data structure and without recursion. The main goal is to demonstrate how recursive algorithms can be executed non-recursively using management tools such as a stack.
+
+## Features
+
+*   **Non-Recursive Algorithm:** The preorder traversal of the tree is implemented without using recursive calls.
+*   **Stack Usage:** An array is used as a stack to manage the tree nodes during the traversal process. This approach is a natural replacement for the call stack used in recursive implementations.
+*   **Node Order Management:** The correct order of placing the nodes on the stack (right node first, then left node) ensures that the nodes are processed in preorder (root, left, right).
+*   **Complete and Executable Code:** Includes the node structure, a helper function to create nodes, the traversal function, and a `main` function to construct a sample tree and execute the algorithm.
+*   **Readability and Clarity:** The code is written to clearly demonstrate the core concepts and be understandable.
+
+## Code Structure
+
+*   `struct Node`: Defines the basic structure for tree nodes, including data and pointers to the left and right children.
+*   `newNode()`: Helper function to create and initialize a new node.
+*   `visit()`: A simple function to display or process the data of the current node.
+*   `preorderNonRecursive()`: The core of the algorithm that performs the non-recursive preorder traversal using a stack.
+*   `main()`: The entry point of the program, responsible for building the sample tree, calling the traversal function, and displaying the results.
+
+## How to Run
+
+1.  **Save the Code:** Save the source code in a file named `preorder_traversal.c`.
+2.  **Compile:** Using a C compiler (such as GCC), compile the code:
+    ```bash
+gcc preorder_traversal.c -o preorder_traversal
+    ```
+3.  **Execute:** Run the generated executable file:
+    ```bash
+./preorder_traversal
+    ```
+
+## Expected Output
+
+After successful execution, you should see the following output:
+
